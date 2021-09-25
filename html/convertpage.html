@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=' https://fonts.googleapis.com/css2?family=Montserrat' re="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Quantity Measurement</title>
+</head>
+
+<body>
+    <h2>Quanment</h2>
+    <div>
+        <header class="header-content">
+            <h1>Welcome To Quantity Measurement</h1>
+        </header>
+    </div>
+
+    <h3>CHOOSE TYPE</h3>
+    <div class="button">
+        <button class="scalebutton" type="button"><img src="../assets/scale.svg">
+            <div class="length-text">
+                <h4>Length</h4>
+            </div>
+        </button>
+        <button class="tempbutton" type="button"><img src="../assets/hot.svg">
+            <div class="temp-text">
+                <h4>Temperature</h4>
+            </div>
+        </button>
+        <button class="volbutton" type="button"><img src="../assets/beaker.svg">
+            <div class="vol-text">
+                <h4>Volume</h4>
+            </div>
+        </button>
+    </div>
+    </div>
+
+    <div class="length-Converter">
+        <div class ="From-To">
+        <p>From  To</p>
+        </div>
+
+        <input type="text" placeholder="Input" value="1" id="input">
+        <input type="text" placeholder="Result" value="100" id="result">
+
+        <select name="length" id="inputType">
+            <option value="milimetre">Milimetre</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="inch">Milimetre</option>
+            <option value="foot">Centimeter</option>
+            <option value="mile">Meter</option>
+        </select>
+        <select name="length" id="resultType">
+            <option value="milimetre">Milimetre</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="inch">Milimetre</option>
+            <option value="foot">Centimeter</option>
+            <option value="mile">Meter</option>
+        </select>
+    </div>
+    </div>
+</body>
+
+</html>
