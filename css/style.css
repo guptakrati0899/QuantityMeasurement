@@ -1,20 +1,31 @@
-body{
-    margin : 0px;
-    padding: 0px;
+html {
     height: 100%;
-    width: 100% ;
+    width: 100%;
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    top: 61px;
-    left: 0px;
-    height: 75px;
-    margin: 0%;
-    background: #446DFF 0% 0% no-repeat padding-box;
+body {
+    background-color: rgb(248, 244, 244);
+    margin: 0px auto;
+    padding: 2em;
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 25px;
+    padding: 10px;
+    width: 50%;
+    font-family: normal normal normal 25px/30px Montserrat;
+    font-family: Montserrat;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    text-transform: capitalize;
     opacity: 1;
-    
 }
 
 h2 {
@@ -22,11 +33,16 @@ h2 {
     left: 212px;
     width: 126px;
     height: 29px;
-    font: normal normal 600 21px/31px Poppins;
+    font-family: normal normal 600 21px/31px Poppins;
+    font-family: Poppins;
     font-size: 155%;
     text-align: center;
-    font-weight: bold;
     width: 35%;
+}
+
+h4 {
+    font-weight: bold;
+    padding-top: 2%;
 }
 
 
@@ -40,30 +56,32 @@ h2 {
 }
 
 
-
-h3 {
-
+.head {
     text-align: center;
     width: 59%;
-    font-family: normal normal medium 15px/19px Montserrat;
-    font-weight: bold;
+    font: normal normal medium 15px/19px Montserrat;
+    font-family: Montserrat;
+    font-size: 17px;
     letter-spacing: 0px;
+    padding-top: 30px;
     color: #000000;
     text-transform: uppercase;
     opacity: 1;
+    margin-left: 6%;
 }
 
 h1 {
     font-size: 30px;
     padding: 10px;
     width:50%;
-    font-family: normal normal normal 25px/30px Montserrat;
+    font: normal normal normal 25px/30px Montserrat;
     font-family: Montserrat;
     font-weight: 10;
     letter-spacing: 3px;
     color: #FFFFFF;
     text-transform: capitalize;
     opacity: 1;
+    margin-left: 12%;
 }
 
 
@@ -73,7 +91,7 @@ h4 {
 }
 
 .From-To {
-    margin-left: 25%;
+    margin-left: 31.5%;
     font-display: flex;
     word-spacing: 280px;
     font-size: 14px;
@@ -109,12 +127,12 @@ h4 {
     border-radius: 7px;
     opacity: 0.2;
     align-items: center;
-    margin-left: 25%;
+    margin-left: 31.5%;
     margin-right: 30px;
     margin-bottom: 25px;
 }
 
-.scalebutton:hover {
+.active1, .scalebutton:hover {
     background: #EDFDF9 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #0EC098;
@@ -132,7 +150,7 @@ h4 {
     opacity: 0.2;
     margin-right: 30px;
 }
-.tempbutton:hover {
+.active2, .tempbutton:hover {
     background: #f5c9cd 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #FD5160;
@@ -140,7 +158,7 @@ h4 {
     opacity: 1;
 }
 
-.volbutton {
+.volumebutton {
     top: 224px;
     left: 385px;
     width: 173px;
@@ -150,7 +168,7 @@ h4 {
     opacity: 0.2;
     margin-right: 30px;
 }
-.volbutton:hover {
+.active3, .volumebutton:hover {
     background: #d9ccf1 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #7224FF;
@@ -158,9 +176,12 @@ h4 {
     opacity: 1;
 }
 
-
+a:link {
+    text-decoration: none;
+}
 .length-text {
     font: normal normal bold 15px/19px Montserrat;
+    font-family: Montserrat;
     letter-spacing: 0px;
     color: #0EC098;
     text-transform: capitalize;
@@ -169,6 +190,7 @@ h4 {
 
 .temp-text {
     font: normal normal bold 15px/19px Montserrat;
+    font-family: Montserrat;
     letter-spacing: 0px;
     color: #FD5160;
     text-transform: capitalize;
@@ -177,6 +199,7 @@ h4 {
 
 .vol-text {
     font: normal normal bold 15px/19px Montserrat;
+    font-family: Montserrat;
     letter-spacing: 0px;
     color: #7224FF;
     font-weight: bold;
@@ -190,26 +213,36 @@ input{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E7DCFE;
     border-radius: 3px;
-    font-style: normal normal bold 15px/19px Montserrat;
+    font-family: normal normal bold 15px/19px Montserrat;
+    font-family: Montserrat;
+    font-weight: bold;
     opacity: 1;
     margin-left: 25px;
 
 }
 
 #input{
-    margin-left: 25%;
+    margin-left: 31.5%;
 }
 
 #inputType {
     width: 285px;
     height: 50px;
     border: 1px solid #E7DCFE;
-    margin-left: 25%;
+    font-family: normal normal bold 15px/19px Montserrat;
+    font-family: Montserrat;
+    margin-left: 31.5%;
 }
 
 #resultType {
     width: 285px;
     height: 50px;
     border: 1px solid #E7DCFE;
+    font-family: normal normal bold 15px/19px Montserrat;
+    font-family: Montserrat;
     margin-left: 25px;
+}
+
+@media only screen and (min-width: 320px){
+
 }
