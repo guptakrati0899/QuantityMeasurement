@@ -1,12 +1,12 @@
 html {
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 body {
     background-color: rgb(248, 244, 244);
     margin: 0px auto;
-    padding: 2em;
     height: 100%;
     width: 100%;
 }
@@ -18,7 +18,8 @@ div {
 h1 {
     font-size: 25px;
     padding: 10px;
-    width: 50%;
+    width: 80%;
+    margin-left: 200px;
     font-family: normal normal normal 25px/30px Montserrat;
     font-family: Montserrat;
     font-weight: lighter;
@@ -81,7 +82,7 @@ h1 {
     color: #FFFFFF;
     text-transform: capitalize;
     opacity: 1;
-    margin-left: 12%;
+  
 }
 
 
@@ -90,17 +91,7 @@ h4 {
     padding-top: 2%;
 }
 
-.From-To {
-    margin-left: 31.5%;
-    font-display: flex;
-    word-spacing: 280px;
-    font-size: 14px;
-    font-family: Montserrat;
-    letter-spacing: 0px;
-    color: #000000;
-    text-transform: uppercase;
-    opacity: 0.62;
-}
+
 .main-content{
     padding-top: 20px;
     display: flex;
@@ -207,43 +198,89 @@ a:link {
     opacity: 1;
 }
 
-input{
-    height: 60px;
-    width: 280px;
-    color: #000000;
-    font-weight: 900;
-    border-radius: 3px;
-    font-family: normal normal bold 15px/19px Montserrat;
-    font-family: Montserrat;
-    opacity: 1;
-    margin-left: 25px;
-    text-indent: 10%;
 
+
+.inputResult1 {
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
 }
 
+.inputResult2 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.inputResult {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.Converter {
+  
+    margin-left: 26%;
+    position: absolute;
+}
+
+.from {
+    margin-left: -4.5rem;
+    font-size: 14px;
+    font-family: Montserrat;
+    color: #000000;
+    letter-spacing: 0px;
+    opacity: 0.62; 
+}
+
+.to {
+    margin-left: -3rem;
+    font-size: 14px;
+    font-family: Montserrat;
+    color: #000000;
+    letter-spacing: 0px;
+    opacity: 0.62;
+}
+
+input {
+    height: 55px;
+    width: 288px;
+    margin-left : 75% ;
+    font-weight: 900;
+    font-family: Montserrat;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    text-indent: 10%;
+}
+
+
 #input{
-    margin-left: 31.5%;
+    margin-left: 60%;
 }
 
 #inputType {
-    width: 285px;
-    height: 50px;
+    width: 296px;
+    height: 55px;
     color: #000000;
     font-family: normal normal bold 15px/19px Montserrat;
     font-family: Montserrat;
-    margin-left: 31.5%;
+    margin-left: 60%;
     font-weight: bold;
     text-indent: 10%;
 }
 
 #resultType {
-    width: 285px;
-    height: 50px;
+    width: 296px;
+    height: 55px;
     color: #000000;
     font-weight: bold;
     font-family: normal normal bold 15px/19px Montserrat;
     font-family: Montserrat;
-    margin-left: 29px;
+    margin-left: 75%;
     text-indent: 10%;
 }
 
@@ -251,14 +288,14 @@ input{
     
 @media only screen 
     and (min-device-width: 320px) 
-    and (max-device-width: 480px)
+    and (max-device-width: 425px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
 
 
         h1 {
-            font-size: 65%;
-            margin-left: -5%;
+            font-size: 60%;
+            margin-left: 15%;
             width: 85%;
         }
 
@@ -266,43 +303,47 @@ input{
         .head{
             font-size: 10px;
             text-align: left;
-            margin-left: -2%;
+            margin-left: 10%;
         }
 
         .header-content{
             margin-left: -5%;
+            width :350px;
         }
 
         h2{
             font-size: 100%;
-            margin-left: -10%;
+            margin-left: 1%;
+            margin-bottom: 5px;
         }
 
-        .button{
-            flex-flow: column;
+        .button {
+            display: flex;
+            flex-flow : row;
+            width: 325px;
         }
+    
 
+        
         .scalebutton{
+        width: 130px;
         margin-bottom: 30px; 
-        margin-left: 25%;
-        margin-right: 15px;
+        margin-left: 8%;
+        margin-right: 10px;
         top: 150x;
-        left: 250px;
-        width: 120px;
-        height: 96px;
+        height: 95px;
 
         }
 
         .tempbutton {
 
+            display: flex;
+            width: 100px;
+            flex-flow: column;
             align-items: center;
-            top: 150px;
-            margin-left: 25%;
-            left: 250px;
+            height: 95px;
+            margin-right: 10px;
             width: 120px;
-            height: 96px;
-            margin-right: 15px;
-            margin-bottom: 30px; 
         }
         .temp-text{
             font-size: 10px;
@@ -317,11 +358,10 @@ input{
         .volumebutton {
 
             top: 150x;
-            margin-left: 25%;
-            left: 250px;
-            width: 120px;
-            height: 96px;
+            width: 130px;
+            height: 95px;
             margin-bottom: 30px; 
+        
         }
 
 
@@ -330,11 +370,32 @@ input{
             width: 384px;
         }
 
-        .From-To {
-            margin-left: 17px;
-            word-spacing: 116px;
-            font-size: 11px;
+        .inputResult{
+            display: flex;
+            flex-flow: column ;
         }
+
+        .inputResult1{
+            margin-left:-50px ;
+        }
+
+        .inputResult2{
+            margin-left:-57px ;
+            
+        }
+
+        .from{
+            margin-left: -93px;
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+        .to{
+            margin-left: -93px;
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+
+       
 
         #inputType {
             width: 132px;
@@ -364,40 +425,39 @@ input{
 
 
     @media screen 
-  and (device-width: 320px) 
+  and (device-width: 425px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: portrait) {
 
     
     h1 {
-        font-size: 65%;
+        font-size: 75%;
         margin-left: -5%;
-        width: 85%;
+        width: 200%;
     }
 
 
     .head{
         font-size: 10px;
         text-align: left;
-        margin-left: -2%;
-    }
-
-    .header-content{
         margin-left: -5%;
     }
 
+
+
+
+  
+
     h2{
         font-size: 100%;
-        margin-left: -10%;
+        margin-left: -30%;
     }
 
     .scalebutton{
-    margin-bottom: 30px; 
-    margin-left: -30px;
-    margin-right: 15px;
+
+    margin-right: 10px;
     top: 150x;
-    left: 250px;
     width: 120px;
     height: 96px;
 
@@ -406,43 +466,29 @@ input{
     .tempbutton {
         display: flex;
         flex-flow: column;
-        align-items: center;
-        top: 150px;
-        left: 250px;
-        width: 120px;
+        width: 100px;
         height: 96px;
-        margin-right: 15px;
-        margin-bottom: 30px; 
+        margin-right: 10px;
     }
-    .temp-text{
-        font-size: 10px;
-    }
+
     .length-text{
+
         font-size: 10px;
     }
     .vol-text{
         font-size: 10px;
     }
+    .temp-text{
+        font-size: 7px;
+    }
 
     .volumebutton {
         top: 150x;
-        left: 250px;
         width: 120px;
         height: 96px;
         margin-bottom: 30px; 
     }
 
-
-    .Converter {
-        margin-left: 1%;
-        width: 384px;
-    }
-
-    .From-To {
-        margin-left: 17px;
-        word-spacing: 116px;
-        font-size: 11px;
-    }
 
     #inputType {
         width: 132px;
@@ -467,89 +513,9 @@ input{
     }
     #input{
         margin-left: 4%;
-    }
+    } 
 
     
-
-}
-
-
-
-@media only screen 
-  and (min-device-width: 760px) 
-  and (max-device-width: 1014px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-
-    h1 {
-        font-size: 25px;
-        margin-left: 10%;
-        width: 100%;
-    }
-
-    h2{
-        margin-left: -8% ;
-    }
-
-    .head{
-        margin-left: -15% ;
-    }
-
-    .scalebutton{
-        margin-left: 30% ;
-        width: 200 px  ;
-        margin-bottom: 50 px;
-    }
-
-    .tempbutton{
-        margin-left: 30% ;
-        margin-bottom: 50 px;
-
-    }
-
-    .volumebutton{
-        margin-left: 30% ;
-        margin-top: 30px;
-
-    }
-    
-    .button{
-        display : flex;
-        flex-flow: column;
-    }
-
-    .From-To{
-        margin-left: 5% ;
-        word-spacing: 255px;
-    }
-
-    
-    input {
-        
-        width: 270px;
-        height: 50px;
-        font-size: 15px;
-        margin-left : 15px;
-    }
-
-    #input{
-        margin-left: 5%;
-    }
-
-    #inputType {
-        width: 276px;
-        height: 50px;
-        margin-left: 5%;
-        font-size: 15px;
-    }
-
-    #resultType {
-        width: 273px;
-        height: 50px;
-        margin-left : 20px;
-        font-size: 15px;
-    }
 
 }
 
@@ -599,6 +565,10 @@ input{
         margin-bottom: 40px;
     }
 
+    .inputResult1{
+        margin-left: -13.5%;
+    }
+
 
 
     .temp-text{
@@ -611,30 +581,30 @@ input{
         font-size: 20px;
     }
 
-
-    .From-To{
-        margin-left: 20% ;
-        word-spacing: 290px;
-        font-size: 20px;
-    }
-
-    
     input {
         
         width: 300px;
         height: 70px;
         font-size: 15px;
-        margin-left : 50px;
+        margin-left : 53px;
     }
 
     #input{
-        margin-left: 20%;
+        margin-left: 18%;
+    }
+    .from{
+        margin-left: -60%;
+        margin-bottom: 30px;
+    }
+    .to{
+        margin-left: -60%;
+        margin-bottom: 30px;
     }
 
     #inputType {
         width: 306px;
         height: 70px;
-        margin-left: 20%;
+        margin-left: 18%;
         font-size: 15px;
     }
 
@@ -645,30 +615,52 @@ input{
         font-size: 15px;
     }
 
+  }
 
 
-
-
-
-
-
-
-      
-    
-
-
-
-
+  @media screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    div {
+        margin: 0;
+    }
+    h2 {
+        font-size: 2.5rem;
+        width: 10rem;
+        margin-left: 40px;
+    }
+    h1 {
+        width: 50rem;
+        font-size: 27px;
+    }
+    .head {
+        font-size: 1.3rem;
+        width: 14rem;
+    }
+    .button{
+        width: 46rem;
+        padding-bottom: 25px;
+    }
+    .scalebutton {
+        margin-left: 4.5rem;
+    }
+    .Converter {
+        margin-left: -0.5rem;
+        padding-top: 20px;
+    }
+    .from {
+        font-size: 21px;
+    }    
+    .to {
+        font-size: 21px;
+    }
+     #inputType, #resultType {
+        height: 4rem;
+        margin-bottom: 7px;
+    }
 
 }
-
-
-
-
-  
-
-
-
-
 
 
