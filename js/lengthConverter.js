@@ -3,6 +3,7 @@ var userResult = document.getElementById('result');
 let inputType = document.getElementById('inputType');
 let resultType = document.getElementById('resultType');
 let inputTypeValue1, resultTypeValue1;
+let inputTypeValue, resultTypeValue;
 
 
 userInput.addEventListener("keyup", myResult);
