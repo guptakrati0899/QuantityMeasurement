@@ -210,14 +210,14 @@ a:link {
 input{
     height: 60px;
     width: 280px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #E7DCFE;
+    color: #000000;
+    font-weight: 900;
     border-radius: 3px;
     font-family: normal normal bold 15px/19px Montserrat;
     font-family: Montserrat;
-    font-weight: bold;
     opacity: 1;
     margin-left: 25px;
+    text-indent: 10%;
 
 }
 
@@ -228,21 +228,447 @@ input{
 #inputType {
     width: 285px;
     height: 50px;
-    border: 1px solid #E7DCFE;
+    color: #000000;
     font-family: normal normal bold 15px/19px Montserrat;
     font-family: Montserrat;
     margin-left: 31.5%;
+    font-weight: bold;
+    text-indent: 10%;
 }
 
 #resultType {
     width: 285px;
     height: 50px;
-    border: 1px solid #E7DCFE;
+    color: #000000;
+    font-weight: bold;
     font-family: normal normal bold 15px/19px Montserrat;
     font-family: Montserrat;
-    margin-left: 25px;
+    margin-left: 29px;
+    text-indent: 10%;
 }
 
-@media only screen and (min-width: 320px){
+
+    
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+
+
+        h1 {
+            font-size: 65%;
+            margin-left: -5%;
+            width: 85%;
+        }
+
+
+        .head{
+            font-size: 10px;
+            text-align: left;
+            margin-left: -2%;
+        }
+
+        .header-content{
+            margin-left: -5%;
+        }
+
+        h2{
+            font-size: 100%;
+            margin-left: -10%;
+        }
+
+        .button{
+            flex-flow: column;
+        }
+
+        .scalebutton{
+        margin-bottom: 30px; 
+        margin-left: 25%;
+        margin-right: 15px;
+        top: 150x;
+        left: 250px;
+        width: 120px;
+        height: 96px;
+
+        }
+
+        .tempbutton {
+
+            align-items: center;
+            top: 150px;
+            margin-left: 25%;
+            left: 250px;
+            width: 120px;
+            height: 96px;
+            margin-right: 15px;
+            margin-bottom: 30px; 
+        }
+        .temp-text{
+            font-size: 10px;
+        }
+        .length-text{
+            font-size: 10px;
+        }
+        .vol-text{
+            font-size: 10px;
+        }
+
+        .volumebutton {
+
+            top: 150x;
+            margin-left: 25%;
+            left: 250px;
+            width: 120px;
+            height: 96px;
+            margin-bottom: 30px; 
+        }
+
+
+        .Converter {
+            margin-left: -3.5%;
+            width: 384px;
+        }
+
+        .From-To {
+            margin-left: 17px;
+            word-spacing: 116px;
+            font-size: 11px;
+        }
+
+        #inputType {
+            width: 132px;
+            height: 45px;
+            margin-left: 4%;
+            font-size: 10px;
+        }
+
+        #resultType {
+            width: 132px;
+            height: 45px;
+            margin-left : 16px;
+            font-size: 10px;
+        }
+
+        input {
+        
+            width: 125px;
+            height: 30px;
+            font-size: 10px;
+            margin-left : 15px;
+        }
+        #input{
+            margin-left: 4%;
+        }
+    }
+
+
+    @media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+    
+    h1 {
+        font-size: 65%;
+        margin-left: -5%;
+        width: 85%;
+    }
+
+
+    .head{
+        font-size: 10px;
+        text-align: left;
+        margin-left: -2%;
+    }
+
+    .header-content{
+        margin-left: -5%;
+    }
+
+    h2{
+        font-size: 100%;
+        margin-left: -10%;
+    }
+
+    .scalebutton{
+    margin-bottom: 30px; 
+    margin-left: -30px;
+    margin-right: 15px;
+    top: 150x;
+    left: 250px;
+    width: 120px;
+    height: 96px;
+
+    }
+
+    .tempbutton {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        top: 150px;
+        left: 250px;
+        width: 120px;
+        height: 96px;
+        margin-right: 15px;
+        margin-bottom: 30px; 
+    }
+    .temp-text{
+        font-size: 10px;
+    }
+    .length-text{
+        font-size: 10px;
+    }
+    .vol-text{
+        font-size: 10px;
+    }
+
+    .volumebutton {
+        top: 150x;
+        left: 250px;
+        width: 120px;
+        height: 96px;
+        margin-bottom: 30px; 
+    }
+
+
+    .Converter {
+        margin-left: 1%;
+        width: 384px;
+    }
+
+    .From-To {
+        margin-left: 17px;
+        word-spacing: 116px;
+        font-size: 11px;
+    }
+
+    #inputType {
+        width: 132px;
+        height: 45px;
+        margin-left: 4%;
+        font-size: 10px;
+    }
+
+    #resultType {
+        width: 132px;
+        height: 45px;
+        margin-left : 16px;
+        font-size: 10px;
+    }
+
+    input {
+    
+        width: 125px;
+        height: 30px;
+        font-size: 10px;
+        margin-left : 15px;
+    }
+    #input{
+        margin-left: 4%;
+    }
+
+    
 
 }
+
+
+
+@media only screen 
+  and (min-device-width: 760px) 
+  and (max-device-width: 1014px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    h1 {
+        font-size: 25px;
+        margin-left: 10%;
+        width: 100%;
+    }
+
+    h2{
+        margin-left: -8% ;
+    }
+
+    .head{
+        margin-left: -15% ;
+    }
+
+    .scalebutton{
+        margin-left: 30% ;
+        width: 200 px  ;
+        margin-bottom: 50 px;
+    }
+
+    .tempbutton{
+        margin-left: 30% ;
+        margin-bottom: 50 px;
+
+    }
+
+    .volumebutton{
+        margin-left: 30% ;
+        margin-top: 30px;
+
+    }
+    
+    .button{
+        display : flex;
+        flex-flow: column;
+    }
+
+    .From-To{
+        margin-left: 5% ;
+        word-spacing: 255px;
+    }
+
+    
+    input {
+        
+        width: 270px;
+        height: 50px;
+        font-size: 15px;
+        margin-left : 15px;
+    }
+
+    #input{
+        margin-left: 5%;
+    }
+
+    #inputType {
+        width: 276px;
+        height: 50px;
+        margin-left: 5%;
+        font-size: 15px;
+    }
+
+    #resultType {
+        width: 273px;
+        height: 50px;
+        margin-left : 20px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen 
+  and (min-device-width: 1020px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+
+
+    .button {
+        display: flex;
+        flex-flow : row;
+    }
+
+
+    .scalebutton{
+        margin-left: 20%;
+        width: 250 px;
+        margin-right: 60px;
+        margin-bottom: 70px;
+    }
+
+    .tempbutton {
+        margin-right: 60px;
+       
+    }
+
+
+
+    h2{
+        margin-left: -4%;
+
+        font-size:40px;
+    }
+
+    h1 {
+        font-size: 35px;
+        margin-left: 40%;
+        width: 100%;
+    }
+
+    .head{
+        margin-top: 40px;
+        font-size: 25px;
+        margin-left: 0%;
+        margin-bottom: 40px;
+    }
+
+
+
+    .temp-text{
+        font-size: 20px;
+    }
+    .length-text{
+        font-size: 20px;
+    }
+    .vol-text{
+        font-size: 20px;
+    }
+
+
+    .From-To{
+        margin-left: 20% ;
+        word-spacing: 290px;
+        font-size: 20px;
+    }
+
+    
+    input {
+        
+        width: 300px;
+        height: 70px;
+        font-size: 15px;
+        margin-left : 50px;
+    }
+
+    #input{
+        margin-left: 20%;
+    }
+
+    #inputType {
+        width: 306px;
+        height: 70px;
+        margin-left: 20%;
+        font-size: 15px;
+    }
+
+    #resultType {
+        width: 306px;
+        height: 70px;
+        margin-left : 53px;
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
+
+
+      
+    
+
+
+
+
+
+}
+
+
+
+
+  
+
+
+
+
+
+
