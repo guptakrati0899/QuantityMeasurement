@@ -19,57 +19,70 @@
         </header>
     </div>
 
-    <h3 class ="head">CHOOSE TYPE</h3>
+    <h3 class="head">CHOOSE TYPE</h3>
     <div class="button">
         <button class="scalebutton active1" type="button"><img src="../assets/scale.svg">
             <div class="length-text">
-                <a href ="/html/length_convert.html">
-                <h4>Length</h4></a>
+                <a href="/html/length_convert.html">
+                    <h4>Length</h4>
+                </a>
             </div>
         </button>
         <button class="tempbutton" type="button"><img src="../assets/hot.svg">
             <div class="temp-text">
-                <a href = "/html/temp_convert.html">
-                <h4>Temperature</h4></a>
+                <a href="/html/temp_convert.html">
+                    <h4>Temperature</h4>
+                </a>
             </div>
         </button>
         <button class="volumebutton" type="button"><img src="../assets/beaker.svg">
             <div class="vol-text">
-                <a href = "/html/volume_convert.html">
-                <h4>Volume</h4></a>
+                <a href="/html/volume_convert.html">
+                    <h4>Volume</h4>
+                </a>
             </div>
         </button>
     </div>
     </div>
 
-    <div class="length-Converter">
-        <div class ="From-To">
-        <p>From  To</p>
+    <div class="Converter">
+        <div class="inputResult">
+            <div class="inputResult1">
+                <div class="from">
+                    <p>FROM</p>
+                </div>
+                <input type="text" placeholder="Input" value="1" id="input">
+
+                <select name="length" id="inputType">
+                    <option value="micrometer">Millimeter</option>
+                    <option value="millimeter">Millimeter</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="meter" selected>Meter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+                    <option value="mile">Mile</option>
+                </select>
+
+            </div>
+            <div class="inputResult2">
+                <div class="to">
+                    <p>TO</p>
+                </div>
+                <input type="text" placeholder="Result" value="100" id="result">
+
+                <select name="length" id="resultType">
+                    <option value="micrometer">Millimeter</option>
+                    <option value="millimeter">Millimeter</option>
+                    <option value="centimeter" selected>Centimeter</option>
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+                    <option value="mile">Mile</option>
+                </select>
+            </div>
         </div>
-
-        <input type="text" placeholder="Input" value="1" id="input">
-        <input type="text" placeholder="Result" value="100" id="result">
-
-        <select name="length" id="inputType">
-            <option value="micrometer">Millimeter</option>
-            <option value="millimeter">Millimeter</option>
-            <option value="centimeter">Centimeter</option>
-            <option value="meter" selected>Meter</option>
-            <option value="kilometer">Kilometer</option>
-            <option value="inch">Inch</option>
-            <option value="foot">Foot</option>
-            <option value="mile">Mile</option>
-        </select>
-        <select name="length" id="resultType">
-            <option value="micrometer">Millimeter</option>
-            <option value="millimeter">Millimeter</option>
-            <option value="centimeter" selected>Centimeter</option>
-            <option value="meter">Meter</option>
-            <option value="kilometer">Kilometer</option>
-            <option value="inch">Inch</option>
-            <option value="foot">Foot</option>
-            <option value="mile">Mile</option>
-        </select>
     </div>
     </div>
     <script src="/js/lengthConverter.js"></script>
