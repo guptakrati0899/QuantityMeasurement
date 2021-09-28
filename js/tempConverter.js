@@ -6,7 +6,6 @@ let inputTypeValue,resultTypeValue;
 let result , result1;
 let inputTypeValue1, resultTypeValue1;
 
-
 userInput.addEventListener("keyup", myResult);
 userResult.addEventListener("keyup", myResult1);
 let input;
