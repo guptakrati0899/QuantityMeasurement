@@ -19,47 +19,59 @@
         </header>
     </div>
 
-    <h3 class ="head">CHOOSE TYPE</h3>
+    <h3 class="head">CHOOSE TYPE</h3>
     <div class="button">
         <button class="scalebutton" type="button"><img src="../assets/scale.svg">
             <div class="length-text">
-                <a href ="/html/length_convert.html">
-                <h4>Length</h4></a>
+                <a href="/html/length_convert.html">
+                    <h4>Length</h4>
+                </a>
             </div>
         </button>
         <button class="tempbutton" type="button"><img src="../assets/hot.svg">
             <div class="temp-text">
-                <a href = "/html/temp_convert.html">
-                <h4>Temperature</h4></a>
+                <a href="/html/temp_convert.html">
+                    <h4>Temperature</h4>
+                </a>
             </div>
         </button>
         <button class="volumebutton active3" type="button"><img src="../assets/beaker.svg">
             <div class="vol-text">
-                <a href = "/html/volume_convert.html">
-                <h4>Volume</h4></a>
+                <a href="/html/volume_convert.html">
+                    <h4>Volume</h4>
+                </a>
             </div>
         </button>
     </div>
     </div>
 
-    <div class="length-Converter">
-        <div class ="From-To">
-        <p>From  To</p>
+    <div class="Converter">
+        <div class="inputResult">
+            <div class="inputResult1">
+                <div class="from">
+                    <p>FROM</p>
+                </div>
+
+                <input type="text" placeholder="Input" value="1" id="input">
+
+                <select name="Volume" id="inputType">
+                    <option value="mililitre">Millilitre</option>
+                    <option value="litre" selected>Litre</option>
+                    <option value="gallon">Gallon</option>
+                </select>
+            </div>
+            <div class="inputResult2">
+                <div class="to">
+                    <p>TO</p>
+                </div>
+                <input type="text" placeholder="Result" value="1000" id="result">
+                <select name="Volume" id="resultType">
+                    <option value="mililitre" selected>Millilitre</option>
+                    <option value="litre">Litre</option>
+                    <option value="gallon">Gallon</option>
+                </select>
+            </div>
         </div>
-
-        <input type="text" placeholder="Input" value="1" id="input">
-        <input type="text" placeholder="Result" value="1000" id="result">
-
-        <select name="Volume" id="inputType">
-            <option value="mililitre">Millilitre</option>
-            <option value="litre" selected>Litre</option>
-            <option value="gallon">Gallon</option>
-        </select>
-        <select name="Volume" id="resultType">
-            <option value="mililitre" selected>Millilitre</option>
-            <option value="litre">Litre</option>
-            <option value="gallon">Gallon</option>
-        </select>
     </div>
     </div>
     <script src="/js/volumeConverter.js"></script>
